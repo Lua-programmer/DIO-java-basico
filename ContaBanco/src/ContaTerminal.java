@@ -13,7 +13,7 @@ public class ContaTerminal {
         double saldo;
 
         show.println("Por favor digite seus dados: ");
-        show.print("Seu número de identificação: ");
+        show.print("O número da sua conta: ");
         numero = sc.nextInt();
         show.print("Seu Nome: ");
         sc.nextLine();
@@ -23,7 +23,8 @@ public class ContaTerminal {
         show.print("Seu saldo: ");
         saldo = sc.nextDouble();
 
-        show.print("Usuário: " + numero + " " + nomeCliente + " \nAgência: " + agencia + "\nSeu saldo é: " + saldo);
+        show.printf("Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %d e seu saldo %.2f" +
+                " já está disponível para o saque", nomeCliente, agencia, numero, saldo);
 
         sc.close();
     }
