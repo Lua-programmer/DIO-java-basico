@@ -10,7 +10,25 @@ public class ProcessoSeletivo {
 //        analizarCandidato(1900.00);
 //        analizarCandidato(2200.00);
 //        analizarCandidato(2000.00);
-        selecaoDeCandidatos();
+//        selecaoDeCandidatos();
+
+        imprimirSelecionados();
+    }
+
+    static void imprimirSelecionados(){
+        String[] candidatos = {"Luana", "Zoe", "David", "Elliot", "Joaquim", "Anna", "Marcos", "Marcela", "Peter", "Jacob"};
+
+        System.out.println("\nFORI");
+        System.out.println("Imprimindo a lista de candidatos informando o índice do elemento");
+        for (int i = 0; i < candidatos.length ; i++) {
+            System.out.printf("O candidato de n° %d é o candidato %s \n", i, candidatos[i]);
+        }
+
+        System.out.println("\nFOREACH");
+        for (String candidato: candidatos) {
+            System.out.printf("O candidato selecionado foi  %s \n",candidato);
+        }
+
     }
 
     static void selecaoDeCandidatos() {
